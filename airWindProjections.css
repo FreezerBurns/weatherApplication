@@ -1,0 +1,13 @@
+.container{
+    height: 350px;
+    width: 350px;
+    background-color:yellow;
+    position: relative;
+    text-align: center;
+}
+.weather{
+    text-align: center;
+}
+.div{
+    padding-right: 150px;
+}

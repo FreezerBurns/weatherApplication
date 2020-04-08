@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+     
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Weather Map App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="airWindProjections.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+    
+        </div>
+      </nav>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-4 bg-light">
+          <aside class="bg-light">
+            <h5 class="mt-1">Search for a City:</h5>
+            <div class="form-inline form-group">
+              <input class="form-control" type="text" id="cityName" />
+              <button class="btn btn-primary" id="btnSearch"> <i class="fa fa-search"></i> </button>
+              <button class="btn btn-danger" style="margin-left: 5px;" id="btnClear"> <i class="fa fa-trash"></i> </button>
+            </div>
+    
+            <ul class="list-group" id="history"></ul>
+          </aside>
+
+
+        </div>
+<div class="col-md-8 " id="mainWeatherContents" >
+            
+<div class="row">
+<div class="col-md-12 bg-light">
+  <h3 id="city"></h3>
+  <h5 id="country"></h5>
+  <h5 id="temp"></h5>
+  <h5 id="description"></h5>
+  <h5 id="hum"></h5>
+  <h5 id="speed"></h5>
+  <h5 id="uvIndex"></h5>
+</div>
+
+<div class="col-md-12" >
+  <div id="forecast" class="row">
+<!--Monday-->
+    <div class="col-2">
+      <div class="card bg-primary text-white ">
+        <div class="card-body p-2">
+          <h5 class="card-title" id="day1Title"></h5>
+          <img id="day1Image"/>
+          <p class="card-text" id="day1Temp"></p>
+          <p class="card-text" id="day1Hum"></p>
+        </div>
+      </div>
+    </div>
+<!--Tuesday-->
+    <div class="col-2">
+      <div class="card bg-primary text-white ">
+        <div class="card-body p-2">
+          <h5 class="card-title" id="day2Title"></h5>
+          <img id="day2Image"/>
+          <p class="card-text" id="day2Temp"></p>
+          <p class="card-text" id="day2Hum"></p>
+        </div>
+      </div>
+    </div>
+<!--Wednesday-->
+<div class="col-2">
+  <div class="card bg-primary text-white ">
+    <div class="card-body p-2">
+      <h5 class="card-title" id="day3Title"></h5>
+      <img id="day3Image"/>
+      <p class="card-text" id="day3Temp"></p>
+      <p class="card-text" id="day3Hum"></p>
+    </div>
+  </div>
+</div>
+<!--Thursday-->
+<div class="col-2">
+  <div class="card bg-primary text-white ">
+    <div class="card-body p-2">
+      <h5 class="card-title" id="day4Title"></h5>
+      <img id="day4Image"/>
+      <p class="card-text" id="day4Temp"></p>
+      <p class="card-text" id="day4Hum"></p>
+    </div>
+  </div>
+</div>
+<!--Friday-->
+<div class="col-2">
+  <div class="card bg-primary text-white ">
+    <div class="card-body p-2">
+      <h5 class="card-title" id="day5Title"></h5>
+      <img id="day5Image"/>
+      <p class="card-text" id="day5Temp"></p>
+      <p class="card-text" id="day5Hum"></p>
+    </div>
+  </div>
+</div>
+<!--Saturday-->
+<div class="col-2">
+  <div class="card bg-primary text-white ">
+    <div class="card-body p-2">
+      <h5 class="card-title" id="day6Title"></h5>
+      <img id="day6Image"/>
+      <p class="card-text" id="day6Temp"></p>
+      <p class="card-text" id="day6Hum"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  </div>
+   
+  
+</div>
+</div>
+
+
+       
+       
+
+        </div>
+    </div>
+
+       
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="weatherExample1.js">
+    
+</script>
+
+
+</body>
+</html>
